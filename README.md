@@ -1,7 +1,6 @@
 # Claude Tutor Template
 
-A comprehensive template for creating educational courses on any technology topic using claude code.
-Specify what you would like to explore and claude will generte a short course according to your specifications.
+A comprehensive template for creating educational courses on any technology topic using claude code. Specify what you would like to explore and claude will generte a short course according to your specifications.
 
 ## Quick Start
 
@@ -32,16 +31,16 @@ Specify what you would like to explore and claude will generte a short course ac
 
 1. **Fill out a course request**:
 
-   ```bash
-   cp course_request_template.md my_course_request.md
-   # Edit my_course_request.md with your specific requirements
-   ```
+    ```bash
+    cp course_request_template.md my_course_request.md
+    # Edit my_course_request.md with your specific requirements
+    ```
 
 2. **Create the course**:
 
-   ```bash
-   /create_course my_course_request.md
-   ```
+    ```bash
+    /create_course my_course_request.md
+    ```
 
 ## What You Get
 
@@ -67,15 +66,15 @@ A complete course structure including:
 
 ## Features
 
-✅ **Always Up-to-Date**: Courses research latest versions and best practices  
-✅ **Interactive Setup**: Interview-based course customization  
-✅ **Interactive Learning**: TODO(human) sections for hands-on practice  
-✅ **Progressive Structure**: Build from basics to real-world projects  
-✅ **80/20 Focus**: Core concepts that cover most practical use cases  
-✅ **Visual Learning**: Mermaid diagrams for complex concepts  
-✅ **Complete Solutions**: Full implementations for reference  
-✅ **Exercise Feedback**: Detailed code reviews with grades (x/10)  
-✅ **Optional Flashcards**: Anki integration for spaced repetition learning  
+✅ **Always Up-to-Date**: Courses research latest versions and best practices
+✅ **Interactive Setup**: Interview-based course customization
+✅ **Interactive Learning**: TODO(human) sections for hands-on practice
+✅ **Progressive Structure**: Build from basics to real-world projects
+✅ **80/20 Focus**: Core concepts that cover most practical use cases
+✅ **Visual Learning**: Mermaid diagrams for complex concepts
+✅ **Complete Solutions**: Full implementations for reference
+✅ **Exercise Feedback**: Detailed code reviews with grades (x/10)
+✅ **Optional Flashcards**: Anki integration for spaced repetition learning
 
 ## Course Structure
 
@@ -111,43 +110,49 @@ A complete course structure including:
 
 ## Getting Started
 
-1. **Clone this repository**:
+1. **Clone this repository:**
 
-   ```bash
-   git clone [your-repo-url] my-learning-project
-   cd my-learning-project
-   ```
+    ```bash
+    git clone [your-repo-url] my-learning-project
+    cd my-learning-project
+    ```
 
-2. **Setup your course**:
+2. **Setup your course:**
 
-   ```bash
-   # Interactive interview to create course request
-   /setup_course [topic-you-want-to-learn]
-   
-   # Then create the course
-   /create_course [topic]_course_request.md
-   ```
+    ```bash
+    # Interactive interview to create course request
+    /setup_course [topic-you-want-to-learn]
 
-3. **Optional - Add flashcards**:
+    # Then create the course
+    /create_course [topic]_course_request.md
+    ```
 
-   ```bash
-   # Default comprehensive deck (40-50 cards)
-   /create_anki_deck [generated-course-directory]
-   
-   # Or specify exact count for essential concepts only
-   /create_anki_deck [generated-course-directory] 15
-   ```
+3. **Optional - Add flashcards:**
 
-4. **Get feedback on exercises**:
+    ```bash
+    # Default comprehensive deck (40-50 cards)
+    /create_anki_deck [generated-course-directory]
 
-   ```bash
-   /review_exercise [path-to-your-completed-exercise]
-   ```
+    # Or specify exact count for essential concepts only
+    /create_anki_deck [generated-course-directory] 15
+    ```
+
+4. **Get feedback on exercises:**
+
+    ```bash
+    /review_exercise [path-to-your-completed-exercise]
+    ```
 
 ## Examples
 
 The `examples/` directory contains filled course requests demonstrating how to use the template for different learning scenarios.
 
----
+--------------------------------------------------------------------------------
 
 **Ready to learn something new?** Clone this template and try `/setup_course [your-topic]` in Claude Code!
+
+## MCP Servers used
+
+Context7 to look up mostly framework documentation. <https://github.com/upstash/context7>
+
+Anki MCP Server to interact with Anki and create flashcards. <https://github.com/nailuoGG/anki-mcp-server>
